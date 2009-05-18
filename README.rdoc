@@ -15,6 +15,12 @@ The Google Mini gem simply lets you query your Google Mini appliance with the ea
 == SYNOPSIS:
 
   require 'google-mini'
+  GoogleMini.search_url = "http://66.18.103.172/search?output=xml_no_dtd&client=tolNET_Main&site=TOL&num=100"
+  search = GoogleMini.search('some search term')
+  puts search.results.length
+  puts search.suggestions.length
+  puts search.synonyms.length
+  puts search.keymatches.length
 
 == REQUIREMENTS:
 
