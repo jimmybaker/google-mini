@@ -24,11 +24,11 @@ The Google Mini gem simply lets you query your Google Mini appliance with the ea
 
 == REQUIREMENTS:
 
-* httparty
+* httparty (http://railstips.org/2008/7/29/it-s-an-httparty-and-everyone-is-invited)
 
 == INSTALL:
 
-* sudo gem install google-mini --source=gems.github.com
+  sudo gem install google-mini --source=gems.github.com
 
 == LICENSE:
 
