@@ -11,7 +11,7 @@ class Search
     
     # ask the google mini for search results
     response = Search.get(url)
-    
+    puts response.inspect
     # results
     if response['GSP'].has_key?('RES')
       if response['GSP']['RES']['R'].kind_of?(Array)
@@ -32,8 +32,8 @@ class Search
     
     # synonyms
     if response['GSP'].has_key?('Synonyms')
-      if response['GSP']['Synonyms'].kind_of?(Array)
-        response['GSP']['Synonyms'].map{ |syn| syn.map{ |k, v| @synonyms << v } }
+      if response['GSP']['Synonyms']['OneSynonym'].kind_of?(Array)
+        response['GSP']['Synonyms']['OneSynonym'].map{ |synonym| @synonyms << synonym }
       else
         response['GSP']['Synonyms'].map{ |k,v| @synonyms << v }
       end
