@@ -5,10 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "google-mini"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{The Google Mini gem simply lets you query your Google Mini appliance with the ease you'd expect from a Ruby library.}
     gem.email = "jimmybaker@me.com"
     gem.homepage = "http://github.com/jumzies/google-mini"
     gem.authors = ["Jimmy Baker"]
+    gem.add_dependency 'httparty'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
