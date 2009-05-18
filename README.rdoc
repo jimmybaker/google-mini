@@ -1,0 +1,7 @@
+= google-mini
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Jimmy Baker. See LICENSE for details.
