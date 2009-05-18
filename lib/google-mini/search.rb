@@ -13,7 +13,6 @@ class Search
     response = Search.get(url)
     
     # results
-    puts response.inspect
     if response['GSP'].has_key?('RES')
       if response['GSP']['RES']['R'].kind_of?(Array)
         response['GSP']['RES']['R'].map{ |res| @results << Result.new(res) }
